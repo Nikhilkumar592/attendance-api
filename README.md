@@ -12,6 +12,6 @@ Indexes are created at startup (idempotent). `GET /health` returns 200 once Mong
 
 - `REVIEW.md`: defects found in the starter and how they were fixed (Part A).
 - `DECISIONS.md`: index, race, tie, headcount and scaling decisions (Part C).
-- `tests/`: pytest suite (`pip install -r tests/requirements.txt && pytest tests`). It runs on `mongomock`, which does not implement `$setWindowFields`, so the harness emulates that one stage; the `/admin/explain` endpoint is not covered by it and needs a real MongoDB (7.0 recommended) to try.
+- It runs on `mongomock`, which does not implement `$setWindowFields`, so the harness emulates that one stage; the `/admin/explain` endpoint is not covered by it and needs a real MongoDB (7.0 recommended) to try.
 
 All endpoints in `openapi.yaml` are implemented.
